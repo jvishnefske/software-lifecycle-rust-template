@@ -2,6 +2,19 @@
 
 A 9-layer multi-agent system implementing the NASA Swiss Cheese Model for safety-critical Rust development. Each layer provides independent verification with deliberately misaligned "holes" to catch defects that slip through other layers.
 
+## Quick Demo
+
+```bash
+# Lint all markdown documentation
+make lint
+
+# Run all quality checks
+make test
+
+# Clean generated files
+make clean
+```
+
 ## Design Philosophy
 
 Rust's ownership system, type safety, and `unsafe` boundaries provide a strong foundation for safety-critical software. This agent system builds on that foundation with:
